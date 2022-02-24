@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | licence test</title>
+
+    <!-- google font cdn links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Nunito:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- font  awsome fonts link -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- external css  file -->
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <nav class="side-margin ">
+
+        <div class="logo">
+            <h5 class="heading">Test.</h5>
+        </div>
+
+        <div class="nav-links-container">
+            <a href="login.html" class="login links"> Login</a>
+            <a href="registration.html" class="register  links">Register</a>
+        </div>
+    </nav>
+
+    <hr class="login-hr">
+    <div class="heading text-center login-heading">Login to account</div>
+    <div class="main-container side-margin">
+
+        <div class="first-container">
+            <form id="loginform">
+                <h5 class="heading">Welcome Back To TEST</h5>
+                <h4 class="sub-heading login-sub-heading">Please enter following details</h4>
+             <span id="msg" style="font-size: 15px; color: red; "></span>
+                <div class="email-container">
+                    <label for="email">Email</label>
+                    <div>
+                        <input type="email" name="email" class="input-fields sub_heading" required>
+                    </div>
+                </div>
+
+                <div class="email-container">
+                    <label for="password">Password</label>
+                    <div>
+                        <input type="password" name="password" class="input-fields sub_heading" required>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="login-btn" type="submit" >Login</button>
+                    <!-- <a href="" class="forgot links">forgot password</a> -->
+
+
+                </div>
+            </form>
+        </div>
+
+        <div class="second-container">
+
+            <img src="img/login-back.jpg" alt="backgorund" class="background-img">
+        </div>
+
+
+    </div>
+
+    <hr>
+    <div>
+        <h6 class="made-with"> Made with<i class="fa-solid fa-heart"></i> in pune <i class="fa-solid fa-city"></i> </h6>
+    </div>
+
+    <!-- jquery cdn link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

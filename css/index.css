@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: x-large;
+}
+.sub_heading {
+  font-family: "Nunito", sans-serif;
+}
+.side-margin {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+nav {
+  margin-top: 5vh;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #ffac09;
+}
+.links {
+  text-decoration: none;
+  /* color: #ffffff; */
+  border-radius: 3px;
+  /* color: #ffffff; */
+}
+
+.login {
+  border: 2px solid #ffac09;
+  color: #ffac09;
+  padding: 0.3rem 2rem 0.3rem 2rem;
+}
+
+.register {
+  background-color: #ffac09;
+  padding: 0.4rem 2rem 0.4rem 2rem;
+  margin-left: 20px;
+  color: #ffffff;
+}
+
+.main-heading {
+  margin-top: 8vh;
+  text-align: center;
+}
+.yellow {
+  color: #ffac09;
+}
+.trafic-signal {
+  width: 100%;
+  text-align: center;
+}
+.btn {
+  text-decoration: none;
+}
+.btn-container {
+  margin-top: 3vh;
+  /* background-color: aqua; */
+  padding: 2rem;
+}
+
+hr {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 2vh;
+  border-bottom: 3px dotted #ffac09;
+  border-top: none;
+}
+.text-center {
+  text-align: center;
+}
+.feedbak-container {
+  overflow: hidden;
+  width: 250px;
+  background-color: #ffce6e;
+  padding: 1rem;
+  border-radius: 0px 10px 10px 10px;
+  margin-top: 1vw;
+}
+.feedback-text {
+  font-size: 10px;
+}
+.user {
+  text-align: right;
+  margin-top: 5px;
+  font-size: 15px;
+}
+.first-row {
+  display: flex;
+  justify-content: space-between;
+}
+.testomonial {
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
+.second-row {
+  display: flex;
+  justify-content: space-between;
+}
+.made-with {
+  margin-top: 4vh;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 4vh;
+}
+.fa-heart {
+  color: red;
+}
+.fa-city {
+  color: #5a4ff3;
+}
+
+/* Logi page starts  here */
+
+.login-heading {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.first-container {
+  padding-top: 10%;
+  width: 30%;
+  margin-left: 10%;
+
+  /* background-color: #ffac09; */
+}
+.second-container {
+  width: 70%;
+}
+.main-container {
+  display: flex;
+}
+.login-sub-heading {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.input-fields {
+  width: 250px;
+  border: 2px solid #ffac09;
+  padding: 0.4rem;
+}
+.email-container {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.login-btn {
+  margin-top: 30px;
+  width: 268px;
+  padding: 0.4rem;
+  background-color: #ffac09;
+  border: 1px solid #ffac09;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 3px;
+}
+.background-img {
+  width: 70%;
+  position: relative;
+  left: 10%;
+}
+.forgot {
+  margin-top: 10px;
+  margin-left: 170px;
+  color: gray;
+  font-size: 15px;
+}
+.login-hr {
+  margin-top: 10px;
+}
+.Password-container {
+  display: flex;
+}
+.register-inputs {
+  width: 180px;
+  border: 2px solid #ffac09;
+  padding: 0.4rem;
+}
+
+.left-margin {
+  margin-left: 20px;
+}
+.padding-top {
+  padding-top: 20px;
+}
+.register-container {
+  margin-top: 1%;
+}
+.input-date {
+  width: 400px;
+  border: 2px solid #ffac09;
+  padding: 0.4rem;
+}
+.register-btn {
+  margin-top: 20px;
+  width: 418px;
+  border: 2px solid #ffac09;
+  padding: 0.4rem;
+  background-color: #ffac09;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.gray{
+  color: gray;
+}

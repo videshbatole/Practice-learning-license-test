@@ -1,0 +1,72 @@
+.plan-img {
+  width: 80%;
+}
+
+.image-container {
+  width: 70%;
+}
+
+.container {
+  display: flex;
+}
+
+.margin-top {
+  margin-top: 6rem;
+}
+
+.welcome-msg {
+  font-size: 3rem;
+  color: #f4d862;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+.sub-msg {
+  color: #72c4e4;
+  font-size: 1rem;
+
+  margin-top: 1rem;
+}
+
+.text-container {
+  width: 50%;
+  text-align: center;
+}
+.price-plan {
+  padding-top: 4rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.plan {
+  border: 1px solid blue;
+  margin: 1rem;
+  width: 180px;
+  border-radius: 5px;
+  font-size: 10px;
+  background-color: #ffffff;
+  /* background-color: #72c4e4; */
+}
+
+.money-icon {
+  width: 100px;
+  padding: 1.5rem;
+}
+
+.plan-btn {
+  width: 160px;
+  padding: 0.5rem;
+  margin-bottom: 10px;
+  background-color: #f4d862;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+.plan-discription {
+  margin: 20px auto 20px auto;
+}
+.l-space {
+  letter-spacing: 1px;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | licence test</title>
+
+    <!-- google font cdn links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Nunito:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- font  awsome fonts link -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- external css  file -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- jquery cdn link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <nav class="side-margin ">
+
+        <div class="logo">
+            <h5 class="heading">Test.</h5>
+        </div>
+
+        <div class="nav-links-container">
+            <a href="login.html" class="login links"> Login</a>
+            <a href="registration.html" class="register  links">Register</a>
+        </div>
+    </nav>
+
+    <hr class="login-hr">
+    <div class="heading text-center login-heading">Create An account</div>
+    <div class="main-container side-margin">
+
+        <div class=" register-container">
+            <form id="regForm">
+                <h5 class="heading">Welcome To TEST</h5>
+                <h4 class="sub-heading login-sub-heading gray">Please enter following details</h4>
+
+                <span id="msg" style="text-align: center; color:red; font-size: 18px; "></span>
+
+
+
+
+                <div class="Password-container padding-top">
+
+                    <div class="colmn">
+                        <label for="First-name">First Name</label>
+                        <div>
+                            <input type="text" name="firstName" class=" sub_heading register-inputs" required>
+                        </div>
+                    </div>
+
+                    <div class="colmn left-margin">
+                        <label for="last-name">Last Name</label>
+                        <div>
+                            <input type="text" name="lastName" class="register-inputs sub_heading " required>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="Password-container padding-top">
+
+                    <div class="colmn">
+                        <label for="dob">Date of birth</label>
+                        <div>
+                            <input type="date" name="dob" class=" sub_heading input-date" required>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="Password-container padding-top">
+
+                    <div class="colmn">
+                        <label for="email">Email</label>
+                        <div>
+                            <input type="email" name="email" class=" sub_heading register-inputs" required>
+                        </div>
+                    </div>
+
+                    <div class="colmn left-margin">
+                        <label for="mobile">Mobile No</label>
+                        <div>
+                            <input type="text" name="mobileNo" class="register-inputs sub_heading " maxlength="10"
+                                minlength="10" required>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="Password-container padding-top">
+
+                    <div class="colmn">
+                        <label for="address">Address</label>
+                        <div>
+                            <input type="text" name="address" class=" sub_heading input-date" required>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="Password-container padding-top">
+
+                    <div class="colmn">
+                        <label for="password">Password</label>
+                        <div>
+                            <input type="password" name="password" class=" sub_heading register-inputs" id="password"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="colmn left-margin">
+                        <label for="cpassword">Confirm password </label>
+                        <div>
+                            <input type="password" name="cpassword" class="register-inputs sub_heading " id="cpassword"
+                                required>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div>
+                    <button class="register-btn" type="submit">Create</button>
+                    <a href="login.html" class="forgot links">Have An Account</a>
+
+
+                </div>
+            </form>
+        </div>
+
+        <div class="second-container">
+
+            <img src="img/login-back.jpg" alt="backgorund" class="background-img">
+        </div>
+
+
+    </div>
+
+    <hr>
+    <div>
+        <h6 class="made-with"> Made with<i class="fa-solid fa-heart"></i> in pune <i class="fa-solid fa-city"></i> </h6>
+    </div>
+
+
+
+    <script src="js/register.js"></script>
+
+</body>
+
+</html>
