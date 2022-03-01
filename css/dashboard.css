@@ -3,14 +3,19 @@
   padding: 0;
 }
 
+body{
+  background-color: rgba(127, 255, 212, 0.144);
+}
+
 nav {
   /* background-color: #ffcfff; */
   width: 15vw;
   height: 100vh;
   position: fixed;
+  background-color: #ffac09;
 }
 nav h1 {
-  color: #ffac09;
+  color: #ffffff;
   font-family: "Josefin Sans", sans-serif;
   /* margin-left: 3rem; */
   padding-top: 1rem;
@@ -35,11 +40,11 @@ nav h1 {
 }
 
 .name {
-  opacity: 70%;
   font-family: "Nunito", sans-serif;
   font-weight: 500;
   text-align: center;
   font-size: 15px;
+  color: #ffffff;
 }
 
 .nav-links ul li {
@@ -61,7 +66,7 @@ nav h1 {
 }
 
 .header {
-  background-color: rgba(127, 255, 212, 0.144);
+  /* background-color: rgba(127, 255, 212, 0.144); */
   width: 85vw;
   margin-left: 15vw;
   height: 100vh;
@@ -96,8 +101,8 @@ nav h1 {
   margin-left: 7px;
 }
 .active {
-  background-color: #ffac09;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #ffac09;
 }
 
 .hello-msg {
@@ -112,7 +117,7 @@ nav h1 {
   background-color: #ffffff;
   margin-left: 2rem;
   margin-top: 2rem;
-  box-shadow: 1px 1px 50px grey;
+  /* box-shadow: 1px 1px 80px grey; */
   display: flex;
 }
 
@@ -120,7 +125,7 @@ nav h1 {
   font-size: 1.3rem;
   margin-left: 1rem;
   font-family: "Nunito", sans-serif;
-  color: #82d8fa;
+  /* color: #82d8fa; */
 }
 .plan-card h3 {
   font-size: medium;
@@ -131,8 +136,152 @@ nav h1 {
 .change-plan {
   width: 8rem;
   background-color: #ffffff;
-  padding: 0.3rem;
+  padding: 0.5rem;
   border: 1px solid gray;
 }
 
+.logout-container {
+  width: 85vw;
+  background-color: #ffffff;
+}
+.row {
+  display: flex;
+  padding: 1rem;
+  /* float: right; */
+  justify-content: end;
+  background-color: #ffffff;
+}
+.row a {
+  text-decoration: none;
+  color: gray;
+}
 
+.fa-power-off {
+  font-size: 1.5rem;
+}
+
+.dashboard-text {
+  margin-left: 2rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.welcome {
+  margin-left: 2.1rem;
+  color: gray;
+  letter-spacing: 1px;
+
+  font-weight: 400;
+}
+
+.card-row {
+  margin-top: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.card-icon {
+  width: 5rem;
+}
+.card {
+  /* background-color: #82d8fa; */
+  display: flex;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: #ffffff;
+  width: 16rem;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.data h6 {
+  color: gray;
+  font-size: 12px;
+}
+.data {
+  padding-top: 1rem;
+  font-family: "Nunito", sans-serif;
+  margin-left: 2.5rem;
+}
+.exam-row {
+  margin-top: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.language-heading {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 1.7rem;
+  color: gray;
+  text-align: center;
+}
+.instructions {
+  text-align: left;
+  color: gray;
+  line-height: 27px;
+  margin-bottom: 2rem;
+}
+
+.language {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: #ffffff;
+  width: 21rem;
+  padding: 2rem;
+}
+.start {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ffac09;
+  padding: 0.3rem 3rem 0.3rem 3rem;
+  margin-left: 28%;
+  margin-right: auto;
+}
+.language-container {
+  display: flex;
+  justify-content: space-between;
+}
+.middel-lang {
+  background-color: #ffac09;
+  color: #ffffff;
+}
+.middel-btn {
+  background-color: #ffffff;
+  color: #ffac09;
+}
+
+.practice-link {
+  text-decoration: none;
+  color: black;
+}
+.active-link {
+  text-decoration: none;
+  color: #ffac09;
+}
+
+.english-btn{
+
+    text-decoration: none;
+  color: #ffffff;
+  background-color: #ffac09;
+  padding: 0.3rem 3rem 0.3rem 3rem;
+  margin-left: 28%;
+  
+  margin-right: auto;
+}
+
+.logout-logo-txt{
+
+  display: flex;
+}
+
+.logo-text{
+  padding: 1px 0px 0px 5px ;
+   font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}

@@ -1,0 +1,130 @@
+.profile-container {
+  /* background-color: red; */
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.profile-image {
+  width: 8rem;
+  position: relative;
+  width: 100%;
+}
+.circle {
+  background-color: aliceblue;
+  width: 9rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 200px;
+  overflow: hidden;
+  border: 3px solid #ffac09;
+}
+.fa-pencil {
+  color: white;
+  font-size: 1rem;
+}
+.pencile-circle {
+  padding: 0.4rem;
+  background-color: #ffac09;
+  position: absolute;
+  border-radius: 25px;
+  top: 30%;
+  left: 60.5%;
+}
+
+input[type="file"] {
+  display: none;
+}
+/* .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+} */
+
+.custom-file-upload {
+  padding: 0.4rem;
+  background-color: #ffac09;
+  position: absolute;
+  border-radius: 25px;
+  top: 29%;
+  left: 60%;
+}
+
+.names-container {
+  /* background-color: #ffac09; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* width: 36rem; */
+  
+  display: flex;
+  justify-content: center;
+}
+
+
+.input-fields {
+  padding: 0.4rem 1rem;
+  border-radius: 3px;
+  border: 1px solid #ffac09;
+}
+
+.mr {
+  margin: 1rem;
+}
+
+.lable {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: gray;
+}
+.input-form-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 36rem;
+}
+
+.email-container{
+
+    /* background-color: #ffac09; */
+}
+
+.long-input{
+    width: 24.5rem;
+}
+.long-input-container{
+    display: flex;
+    justify-content: center;
+}
+.m-top{
+
+    margin-top: 1rem;
+    
+}
+.contact-container{
+  
+  display: flex;
+  justify-content: center;
+}
+
+.save-btn{
+  position: absolute;
+  left: 62%;
+  width: 9rem;
+  padding: 0.2rem 1rem;
+  border: 1px solid #ffac09 ;
+  background-color: #ffac09;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.plan{
+  text-align: center;
+  margin-top: 1rem;
+  color: #ffac09;
+  opacity: 60%;
+  font-size: large;
+}
+.logo-text{
+
+padding: 0px 5px 0px 0px;
+}

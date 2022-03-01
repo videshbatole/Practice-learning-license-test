@@ -2,9 +2,43 @@
 <%  String name=(String)session.getAttribute("name");  
        String id =(String)session.getAttribute("id"); 
 
+if (session.getAttribute("id") == null || session.getAttribute("id").equals("")){
+
+   response.sendRedirect("login.html");
+    
+}
+
+       ResultSet data = null;
+       String email  = null;
+       String mobile = null;
+
+       try {
+
+                      Class.forName("com.mysql.jdbc.Driver");
+                      Connection  conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ltest","root","");
+
+                      PreparedStatement userQuery = conn.prepareStatement("SELECT *  FROM `user` WHERE id=?");
+                      userQuery.setString(1,id);
+
+                       data  =  userQuery.executeQuery();
+                         
+                         while (data.next()){
+                         email  =   data.getString(5);
+                         mobile = data.getString(6);
+                         }
+                     
+                     
+                        
+                      
+                  
+           
+       } catch (Exception e) {
+
+           out.print(e);
+           
+       }
+
 %>
-
-
 
 
 <!DOCTYPE html>
@@ -33,6 +67,12 @@
 
 <body>
 
+   <input type="hidden" name="name" id="name" value="<% out.print(name);%>">
+   <input type="hidden" name="mobile" id="mobile" value="<% out.print(mobile);%>">
+    <input type="hidden" name="email" id="email" value="  <% out.print(email);%>  ">
+    <input type="hidden" name="mobile" id="mobile" value="<% out.print(mobile);%>">
+
+ 
     <nav class="plan-logo side-margin">
 
         <h1 class="heading logo"> Test.</h1>
@@ -49,7 +89,7 @@
         <div class="text-container">
             <div>
 
-                <h1 class=" margin-top welcome-msg">Welcome   <%   out.print(name);  out.print(id);%></h1>
+                <h1 class=" margin-top welcome-msg">Welcome   <%   out.print(name);     %></h1>
                 <h6 class="sub-msg">Choose your plans</h6>
             </div>
 
@@ -59,28 +99,32 @@
 
 
                 <div class="plan">
+
+                
                     <img src="img/money-bag.gif" alt="money-bag" class="money-icon">
                     <h1 class="sub_heading">Basic</h1>
                     <h3 class="plan-discription"> Get 3 Test for free</h3>
 
                     <button class="plan-btn l-space" id="free" type="button" id="free">Start</button>
+                   
                 </div>
 
                 <div class="plan">
+                
                     <img src="img/money-bag.gif" alt="money-bag" class="money-icon">
-                    <h1 class="sub_heading"> Standard 49</h1>
+                    <h1 class="sub_heading"> Standard  <i class="fa-regular fa-indian-rupee-sign"></i> 49 </h1>
                     <h3 class="plan-discription"> Get 10 Test </h3>
-
                     <button class="plan-btn l-space " id="49" type="button">Start</button>
-
+                
                 </div>
 
                 <div class="plan">
+              
                     <img src="img/money-bag.gif" alt="money-bag" class="money-icon">
-                    <h1 class="sub_heading"> Primium 99</h1>
+                    <h1 class="sub_heading"> Primium <i class="fa-regular fa-indian-rupee-sign"></i> 99</h1>
                     <h3 class="plan-discription"> Get unlimited Test</h3>
 
-                    <button class="plan-btn l-space " id="99" type="button">Start</button>
+                    <button class="plan-btn l-space " id="99" type="buttn">Start</button>
 
                 </div>
             </div>
@@ -88,7 +132,9 @@
 
     </div>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/payment.js"></script>
+   
 
 </body>
 

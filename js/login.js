@@ -28,7 +28,7 @@ $("#loginform").submit(function (e) {
       } else if (type === userStr) {
         window.location.href = "plans.jsp";
       } else if (status === validStr) {
-        window.location.href = "www.google.com";
+        window.location.href = "dashboard.jsp";
       }
     },
   });
