@@ -1,13 +1,47 @@
-<!-- 
- <%@ page import="java.io.*,java.util.*,java.sql.*,org.json.simple.*"%>
+
+ <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"   import="java.io.*,java.util.*,java.sql.*,org.json.simple.*"%>
 
 <%
 
+
+String id =(String)session.getAttribute("id");
 if (session.getAttribute("id") == null || session.getAttribute("id").equals("")){
 
    response.sendRedirect("login.html");
 }
-%>  -->
+
+
+
+       ResultSet data = null;
+       String  firstName = null ,lastName =null , testLeft=null;
+    //    String mobile = null ,  ;
+
+
+
+ try {
+
+                      Class.forName("com.mysql.jdbc.Driver");
+                      Connection  conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ltest","root","");
+
+                      PreparedStatement userQuery = conn.prepareStatement("SELECT *  FROM `user` WHERE id=?");
+                      userQuery.setString(1,id);
+
+                       data  =  userQuery.executeQuery();
+                         
+                         while (data.next()){
+                         firstName  =   data.getString(2);
+                         lastName = data.getString(3);
+                         testLeft = data.getString(10);
+                         
+                         
+                         }
+                        
+       } catch (Exception e) {
+
+           out.print(e);
+           
+       }
+%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +57,9 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Nunito:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
 
     <!-- font  awsome fonts link -->
     <link rel="stylesheet" href="css/all.css">
@@ -45,23 +82,23 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
             <div class="avtar">
                 <img src="img/avtar.jpg" alt="">
             </div>
-            <h3 class="name">videsh batole</h3>
+            <h3 class="name"><% out.print(firstName +"  " + lastName);%></h3>
 
             <div class="nav-links first-margin">
                 <ul>
                     <li class="active">
                         <div class="li"><i class="fa-thin fa-align-justify"> </i>
-                            <div class="dashboard-logo"><a href="dashboard.html" class="active-link">Dashboard</a></div>
+                            <div class="dashboard-logo"><a href="dashboard.jsp" class="active-link">Dashboard</a></div>
                         </div>
                     </li>
                     <li>
                         <div class="li"><i class="fa-thin fa-memo-circle-check"></i>
-                            <div class="practice"><a href="practice.html" class="practice-link">Practice</a></div>
+                            <div class="practice"><a href="practice.jsp" class="practice-link">Practice</a></div>
                         </div>
                     </li>
                     <li class="">
                         <div class="li"><i class="fa-thin fa-user-tie"></i>
-                            <div class="profile"><a href="profile.html" class="practice-link">Profile</a></div>
+                            <div class="profile"><a href="profile.jsp" class="practice-link">Profile</a></div>
                         </div>
                     </li>
 
@@ -89,7 +126,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
             </div>
             <!-- logout button end  here   -->
             <h1 class="dashboard-text">Dashboard</h1>
-            <h5 class="welcome">Welcome ,Videsh</h5>
+            <h5 class="welcome">Welcome ,<% out.print(firstName);%></h5>
 
             <div class="card-row">
                 <!-- card 1 -->
@@ -108,7 +145,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                 <div class="card">
                     <div class="gif">
 
-                        <img src="img/checklist.gif" alt="winner" class="card-icon">
+                        <img src="img/exam.gif" alt="winner" class="card-icon">
                     </div>
                     <div class="data">
                         <h6>Total Test</h6>
@@ -119,11 +156,11 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                 <div class="card">
                     <div class="gif">
 
-                        <img src="img/award.gif" alt="winner" class="card-icon">
+                        <img src="img/checklist.gif" alt="winner" class="card-icon">
                     </div>
                     <div class="data">
                         <h6>Total Test left</h6>
-                        <h2>5555</h2>
+                        <h2><% out.print(testLeft);%></h2>
                     </div>
 
                 </div>

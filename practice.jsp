@@ -2,11 +2,41 @@
  <%@ page import="java.io.*,java.util.*,java.sql.*,org.json.simple.*"%>
 
 <%
-
+String id =(String)session.getAttribute("id");
 if (session.getAttribute("id") == null || session.getAttribute("id").equals("")){
 
    response.sendRedirect("login.html");
 }
+
+ResultSet data = null;
+       String  firstName = null ,lastName =null;
+    //    String mobile = null ,  ;
+
+
+
+ try {
+
+                      Class.forName("com.mysql.jdbc.Driver");
+                      Connection  conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ltest","root","");
+
+                      PreparedStatement userQuery = conn.prepareStatement("SELECT *  FROM `user` WHERE id=?");
+                      userQuery.setString(1,id);
+
+                       data  =  userQuery.executeQuery();
+                         
+                         while (data.next()){
+                         firstName  =   data.getString(2);
+                         lastName = data.getString(3);
+                         
+                         }
+                        
+       } catch (Exception e) {
+
+           out.print(e);
+           
+       }
+
+
 %>  -->
 
 <!DOCTYPE html>
@@ -47,24 +77,24 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
             <div class="avtar">
                 <img src="img/avtar.jpg" alt="">
             </div>
-            <h3 class="name">videsh batole</h3>
+            <h3 class="name"><% out.print(firstName + " " +lastName);%></h3>
 
             <div class="nav-links first-margin">
                 <ul>
                     <li class="li">
                         <div class="li"><i class="fa-thin fa-align-justify"> </i>
-                            <div class="dashboard-logo"><a href="dashboard.html" class="practice-link">Dashboard</a>
+                            <div class="dashboard-logo"><a href="dashboard.jsp" class="practice-link">Dashboard</a>
                             </div>
                         </div>
                     </li>
                     <li class="active">
                         <div class="li"><i class="fa-thin fa-memo-circle-check"></i>
-                            <div class="practice"><a href="practice.html" class="practice-link">Practice</a></div>
+                            <div class="practice"><a href="practice.jsp" class="practice-link">Practice</a></div>
                         </div>
                     </li>
                     <li class="">
                         <div class="li"><i class="fa-thin fa-user-tie"></i>
-                            <div class="profile"><a href="profile.html" class="practice-link">Profile</a></div>
+                            <div class="profile"><a href="profile.jsp" class="practice-link">Profile</a></div>
                         </div>
                     </li>
 
@@ -92,7 +122,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
 
             <!-- logout button end  here   -->
             <h1 class="dashboard-text">Practice</h1>
-            <h5 class="welcome">Welcome ,Videsh</h5>
+            <h5 class="welcome">Welcome ,<% out.print(firstName);%></h5>
 
             <div class="question-answer">
 

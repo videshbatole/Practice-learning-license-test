@@ -4,7 +4,8 @@
 String logout = request.getParameter("logout");
 
 if(logout != null){
-
+    
+   session.invalidate();
     response.sendRedirect("../login.html");
 
 } else{

@@ -110,7 +110,7 @@ input[type="file"] {
   position: absolute;
   left: 62%;
   width: 9rem;
-  padding: 0.2rem 1rem;
+  padding: 0.5rem 1rem;
   border: 1px solid #ffac09 ;
   background-color: #ffac09;
   color: #ffffff;
