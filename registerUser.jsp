@@ -50,7 +50,7 @@
                                                         out.print(mobile);
                                                     }else{
 
-                                                         PreparedStatement reg = conn.prepareStatement("INSERT INTO user (firstName ,lastName ,dob,email,mobileNo,address,userType,password) VALUES (?,?,?,?,?,?,?,?)");
+                                                         PreparedStatement reg = conn.prepareStatement("INSERT INTO user (firstName ,lastName ,dob,email,mobileNo,address,userType,password ,totalPoint,totalTest) VALUES (?,?,?,?,?,?,?,?,?,?)");
 
 
                                                       
@@ -62,6 +62,8 @@
                                                          reg.setString(6,address);
                                                          reg.setString(7,userType);
                                                          reg.setString(8,password);
+                                                         reg.setString(9,"0");
+                                                         reg.setString(10,"0");
 
                                                         int x  = reg.executeUpdate();
 

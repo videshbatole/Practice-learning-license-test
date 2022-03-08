@@ -6,6 +6,7 @@
 .heading {
   font-family: "Josefin Sans", sans-serif;
   font-size: x-large;
+  z-index: 9999;
 }
 .sub_heading {
   font-family: "Nunito", sans-serif;
@@ -16,7 +17,7 @@
 }
 
 nav {
-  margin-top: 5vh;
+  margin-top: 3vh;
   /* background-color: aqua; */
   display: flex;
   justify-content: space-between;
@@ -48,13 +49,20 @@ nav {
 .main-heading {
   margin-top: 8vh;
   text-align: center;
+  z-index: 9999;
 }
 .yellow {
   color: #ffac09;
 }
 .trafic-signal {
   width: 100%;
-  text-align: center;
+ position: relative;
+}
+
+.trafic-image-container{
+
+position: absolute;
+top: 10%;
 }
 .btn {
   text-decoration: none;
@@ -63,6 +71,8 @@ nav {
   margin-top: 3vh;
   /* background-color: aqua; */
   padding: 2rem;
+  z-index: 99999;
+  
 }
 
 hr {
@@ -124,9 +134,10 @@ hr {
 }
 
 .first-container {
-  padding-top: 10%;
+  padding-top: 7%;
   width: 30%;
-  margin-left: 10%;
+ left: 60%;
+  position: absolute;
 
   /* background-color: #ffac09; */
 }
@@ -147,12 +158,12 @@ hr {
   padding: 0.4rem;
 }
 .email-container {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .login-btn {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 268px;
   padding: 0.4rem;
   background-color: #ffac09;
@@ -162,13 +173,13 @@ hr {
   border-radius: 3px;
 }
 .background-img {
-  width: 70%;
+  width: 80%;
   position: relative;
-  left: 10%;
+  left: 20%;
 }
 .forgot {
-  margin-top: 10px;
-  margin-left: 170px;
+  
+  margin-left:32%;
   color: gray;
   font-size: 15px;
 }
@@ -211,3 +222,4 @@ hr {
 .gray{
   color: gray;
 }
+

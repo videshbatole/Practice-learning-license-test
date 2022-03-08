@@ -1,0 +1,57 @@
+.forgot-img {
+  width: 50%;
+}
+
+.forgot-icon {
+  width: 100%;
+}
+.forgot-container {
+  display: flex;
+  margin-top: 3rem;
+}
+.forgot-form {
+  margin-top: 10%;
+  width: 50%;
+}
+
+.forgot-input {
+  width: 300px;
+  height: 27px;
+  border: 1px solid #ffac09;
+}
+.forgot-btn {
+  background-color: #ffac09;
+  border: #ffac09;
+  padding: 0.3rem 2rem 0.3rem 2rem;
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+.forgot-text {
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.forgot-form-input {
+  margin-left: 30%;
+}
+.forgot-para {
+  font-family: "Nunito", sans-serif;
+  color: gray;
+}
+
+.hide{
+
+  display: none;
+}
+.show{
+  display: block;
+}
+.pass-btn{
+margin-top: 1rem;
+  width: 300px;
+}
+.pass-in{
+  margin-top: 1rem;
+}

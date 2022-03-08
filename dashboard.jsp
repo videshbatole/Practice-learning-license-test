@@ -5,6 +5,9 @@
 
 
 String id =(String)session.getAttribute("id");
+String user = (String)session.getAttribute("user");
+  session.setAttribute("plan","premium");
+ String userplan = (String) session.getAttribute("plan"); 
 if (session.getAttribute("id") == null || session.getAttribute("id").equals("")){
 
    response.sendRedirect("login.html");
@@ -13,7 +16,9 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
 
 
        ResultSet data = null;
-       String  firstName = null ,lastName =null , testLeft=null;
+       String  firstName=null ,lastName=null , testLeft=null ,totalPoint=null ,totalTest =null ,plan=null , checkLeftTest=null ;
+       String userType =null;
+       
     //    String mobile = null ,  ;
 
 
@@ -29,12 +34,18 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                        data  =  userQuery.executeQuery();
                          
                          while (data.next()){
-                         firstName  =   data.getString(2);
-                         lastName = data.getString(3);
-                         testLeft = data.getString(10);
+                         plan = data.getString(8);
+                         firstName=data.getString(2);
+                         lastName=data.getString(3);
+                         totalPoint=data.getString(11);
+                         totalTest=data.getString(12);
+                         testLeft=data.getString(10);
+
                          
                          
                          }
+                          checkLeftTest ="test.jsp?testleft="+testLeft;
+
                         
        } catch (Exception e) {
 
@@ -137,7 +148,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                     </div>
                     <div class="data">
                         <h6>Total Points</h6>
-                        <h2>5555</h2>
+                        <h2><%out.print(totalPoint); %></h2>
                     </div>
 
                 </div>
@@ -149,7 +160,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                     </div>
                     <div class="data">
                         <h6>Total Test</h6>
-                        <h2>5555</h2>
+                        <h2><%out.print(totalTest); %></h2>
                     </div>
 
                 </div>
@@ -159,19 +170,19 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                         <img src="img/checklist.gif" alt="winner" class="card-icon">
                     </div>
                     <div class="data">
-                        <h6>Total Test left</h6>
-                        <h2><% out.print(testLeft);%></h2>
+                    <h6>Total Test left</h6>
+                       <h2><% out.print(testLeft);%></h2>
                     </div>
 
                 </div>
                 <div class="card">
                     <div class="gif">
 
-                        <img src="img/award.gif" alt="winner" class="card-icon">
+                        <img src="img/money-bag.gif" alt="winner" class="card-icon">
                     </div>
                     <div class="data">
-                        <h6>Total Points</h6>
-                        <h2>5555</h2>
+                        <h6>Plan</h6>
+                       <h2><%out.print(plan); %></h2>
                     </div>
 
                 </div>
@@ -196,7 +207,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                             <h5>5. You'll get points on the basis of your correct answers.</h5>
 
                         </div>
-                        <a href="test.html" class="english-btn">Start</a>
+                        <a href="<% out.print(checkLeftTest);%>" class="english-btn">Start</a>
                     </div>
 
                     <div class="language middel-lang">
@@ -209,7 +220,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                             <h5>5. आपको आपके सही उत्तरों के आधार पर अंक मिलेंगे।</h5>
 
                         </div>
-                        <a href="test.html" class="start middel-btn">Start</a>
+                        <a href="<% out.print(checkLeftTest);%>" class="start middel-btn">Start</a>
                     </div>
 
                     <div class="language">
@@ -222,7 +233,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                             <h5>5. तुमच्या योग्य उत्तरांच्या आधारे तुम्हाला गुण मिळतील.</h5>
 
                         </div>
-                        <a href="test.html" class="start">Start</a>
+                        <a href="<% out.print(checkLeftTest);%>" class="start">Start</a>
                     </div>
                 </div>
 

@@ -5,7 +5,7 @@ var msg = document.getElementById("msg");
 $("#regForm").submit(function (e) {
   if (password.value != cPassword.value) {
     msg.style.display = "block";
-    msg.innerHTML = "password should be same";
+    msg.innerHTML = "Password must be same";
     msg.style.color = "red";
     e.preventDefault();
   } else if (password.value == cPassword.value) {

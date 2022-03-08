@@ -12,16 +12,10 @@
     String id =(String)session.getAttribute("id");
 
 
-
+if(submit != ""){
 try {
 
-if(submit != ""){
-
-
-
- Class.forName("com.mysql.jdbc.Driver");
-
-
+                                                Class.forName("com.mysql.jdbc.Driver");
                                                 Connection  conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ltest","root","");
                                                 PreparedStatement es = conn.prepareStatement("SELECT * FROM `user` WHERE id !=? AND email =? ");
 
@@ -93,11 +87,8 @@ if(submit != ""){
     
     out.print(e);
 }
+}else{
+ response.sendRedirect("login.html");
 }
-else{
-
-    response.sendRedirect("login.html");
-}
-    
 
 %>

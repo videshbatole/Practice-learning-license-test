@@ -8,7 +8,7 @@
                       Class.forName("com.mysql.jdbc.Driver");
                       Connection  conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ltest","root","");
 
-                      PreparedStatement userQuery = conn.prepareStatement("SELECT `id` , `userType`,`firstName` FROM `user` WHERE email=? AND password =?");
+                      PreparedStatement userQuery = conn.prepareStatement("SELECT `id` , `userType`, `firstName`   FROM `user` WHERE email=? AND password =?");
                       userQuery.setString(1,email);
                       userQuery.setString(2,password);
                       
@@ -23,9 +23,15 @@
                         
                          String userStatus = userID.getString(1);
                          String  userplan = userID.getString(2);
-                          String  username = userID.getString(3);
+                         String  username = userID.getString(3);
+                        
+
+
+
                          session.setAttribute("id",userStatus);  
                          session.setAttribute("name",username);
+                         session.setAttribute("user",userplan);
+                         session.setAttribute("email",email);
                          
                          
                         

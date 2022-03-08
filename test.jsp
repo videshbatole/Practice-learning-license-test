@@ -1,4 +1,21 @@
-<!-- Created By CodingNepal - www.codingnepalweb.com  -->
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"  import="java.io.*,java.util.*,java.sql.*,org.json.simple.*"%>
+  <%
+     
+       int  leftTest =Integer. parseInt(request.getParameter("testleft"));
+
+       String email = (String)session.getAttribute("email");
+
+      
+    
+    if(leftTest <= 0){
+ response.sendRedirect("oldplan.jsp");
+
+    }
+  
+  
+  
+  
+  %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,29 +28,14 @@
     
 </head>
 <body>
-    <!-- start Quiz button
-    <div class="start_btn"><button>Start Quiz</button></div> -->
 
+<input type="hidden" id="email" value="<% out.print(email);%>">
+    
     <div class="logo">Test</div>
     <hr>
 
-    <!-- Info Box
-    <div class="info_box">
-        <div class="info-title"><span>Some Rules of this Quiz</span></div>
-        <div class="info-list">
-            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
-            <div class="info">2. Once you select your answer, it can't be undone.</div>
-            <div class="info">3. You can't select any option once time goes off.</div>
-            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
-            <div class="info">5. You'll get points on the basis of your correct answers.</div>
-        </div>
-        <div class="buttons">
-            <button class="quit">Exit Quiz</button>
-            <button class="restart">Continue</button>
-        </div>
-    </div> -->
-
-    <!-- Quiz Box -->
+    
+  
     <div class="quiz_box">
         <header>
             <div class="title"></div>
@@ -62,7 +64,7 @@
     </div>
 
     <!-- Result Box -->
-    <div class="result_box">
+    <div class="result_box" id="target">
         <div class="icon">
             <i class="fas fa-crown"></i>
         </div>
@@ -72,16 +74,16 @@
         </div>
         <div class="buttons">
             <!-- <button class="restart">Dashboard</button> -->
-            <a href="dashboard.jsp"  class="restart"><button class="quit">Dashboard</button></a>
+            <a href="dashboard.jsp"  class="restart"><button class="quit" id="pointAdd">Dashboard</button></a>
             
         </div>
     </div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Inside this JavaScript file I've inserted Questions and Options only -->
     <script src="js/questions.js"></script>
 
     <!-- Inside this JavaScript file I've coded all Quiz Codes -->
     <script src="js/testJs.js"></script>
-
 </body>
 </html>

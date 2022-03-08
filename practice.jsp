@@ -1,5 +1,5 @@
 <!-- 
- <%@ page import="java.io.*,java.util.*,java.sql.*,org.json.simple.*"%>
+ <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"   import="java.io.*,java.util.*,java.sql.*,org.json.simple.*"%>
 
 <%
 String id =(String)session.getAttribute("id");
@@ -146,26 +146,96 @@ ResultSet data = null;
 
                     <!-- question div -->
                     <div class="question-div">
-                        <h4><span>1.</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, ea. </h4>
-                        <h3 class="answer"> Ans. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint,
+                        <h4><span>1.</span> A person driving a vehicle in a public place without a licence, is liable for:</h4>
+                        <h3 class="answer"> Ans. Penalty for the driver and the owner and/ or seizure of vehicle,
                             explicabo!</h3>
                     </div>
 
                     <!-- question div -->
                     <div class="question-div">
-                        <h4><span>1.</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, ea. </h4>
-                        <h3 class="answer"> Ans. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint,
+                        <h4><span>2.</span> While parking your vehicle on a downward gradient, in addition to the application of hand brake, the gear engaged should be:</h4>
+                        <h3 class="answer"> Ans. In reverse</h3>
+                    </div>
+
+                    <!-- question div -->
+                    <div class="question-div">
+                        <h4><span>3.</span>On a road designated as one way, which of the following holds true?</h4>
+                        <h3 class="answer"> Ans . Should not drive in reverse gear
                             explicabo!</h3>
                     </div>
 
                     <!-- question div -->
                     <div class="question-div">
-                        <h4><span>1.</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, ea. </h4>
-                        <h3 class="answer"> Ans. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint,
-                            explicabo!</h3>
+                        <h4><span>4.</span>What happens if you are carrying overload in goods carriages?</h4>
+                        <h3 class="answer"> Ans . Driving licence can be suspended or cancelled</h3>
+                    </div>
+
+                     <!-- question div -->
+                    <div class="question-div">
+                        <h4><span>5.</span>A red traffic light indicates?</h4>
+                        <h3 class="answer"> Ans . Stop</h3>
+                    </div>
+
+                    <!-- question div -->
+                    <div class="question-div">
+                        <h4><span>6.</span>What happens if you are carrying overload in goods carriages?</h4>
+                        <h3 class="answer"> Ans . Driving licence can be suspended or cancelled</h3>
+                    </div>
+
+                   <!-- question div -->
+                    <div class="question-div">
+                        <h4><span>7.</span>When you reach an intersection where there is no signal light or a traffic police man, you should:</h4>
+                        <h3 class="answer"> Ans .Give way to the traffic approaching the intersection on your right side and proceed after giving necessary signals</h3>
+                    </div>
+
+                   <!-- question div --> 
+                    <div class="question-div">
+                        <h4><span>8.</span>When you reach an intersection where there is no signal light or a traffic police man, you should:</h4>
+                        <h3 class="answer"> Ans .Give way to the traffic approaching the intersection on your right side and proceed after giving necessary signals</h3>
+                    </div>
+
+                   <!-- question div -->
+                    <div class="question-div">
+                        <h4><span>9.</span>When you reach an intersection where there is no signal light or a traffic police man, you should:</h4>
+                        <h3 class="answer"> Ans .Give way to the traffic approaching the intersection on your right side and proceed after giving necessary signals</h3>
+                    </div>
+
+                     <!-- question div -->
+                    <div class="question-div">
+                        <h4><span>10.</span> What is the meaning of a blinking red traffic light? </h4>
+                        <h3 class="answer"> 2.	Stop the vehicle and proceed if safe</h3>
+                    </div>
+
+
+                   <!-- question div -->
+                    <div class="question-div">
+                        <h4><span>1.</span>तुम्ही पररवहन वाहन कसे ओळखाल?</h4>
+                        <h3 class="answer"> ans. वाहनाची नंबरप्लेट पाहून </h3>
+                    </div>
+
+
+                    <div class="question-div">
+                        <h4><span>2.</span>शिकाऊ लायसन्सची विधीग्राहयता </h4>
+                        <h3 class="answer"> ans.	6 महिने </h3>
+                    </div>
+
+                    <div class="question-div">
+                        <h4><span>3.</span>फूटपाथवरिहित रस्त्यावर पादचा-याांनी </h4>
+                        <h3 class="answer"> ans .	रस्त्याच्या उजव्या बाजूकडून चालावे </h3>
+                    </div>
+
+                    <div class="question-div">
+                        <h4><span>4.</span>समोरील वाहन ओलाांडण्यासाठी/ओव्हरटेक्साठी</h4>
+                        <h3 class="answer"> Ans.	त्या वाहनच्या उजव्या बाजूकडूर् जावे </h3>
+                    </div>
+                    
+                    <div class="question-div">
+                        <h4><span>5.</span>मनुष्यवरीहित रेल्वे क्रोसिंग ओलाांडण्यापूवी वाहर्चालकाने</h4>
+                        <h3 class="answer"> Ans. रस्त्याच्या डाव्या बाजूस वाहन थाांबवून रेल्वे येत नसर्ल्याची खात्री करावी </h3>
                     </div>
 
                 </div>
+                
 
                 <div class="symbols hide" id="symbol-div">
 

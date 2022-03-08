@@ -70,3 +70,15 @@
 .l-space {
   letter-spacing: 1px;
 }
+
+.btn-disabled{
+
+      width: 160px;
+  padding: 0.5rem;
+  margin-bottom: 10px;
+  background-color:gray;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}

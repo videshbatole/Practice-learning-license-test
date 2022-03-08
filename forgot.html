@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css links -->
+    <link rel="stylesheet" href="css/newindex.css">
+    <link rel="stylesheet" href="css/forgot.css">
+
+    <!-- google font cdn links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Nunito:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="css/all.css">
+
+</head>
+
+<body>
+    <!-- navigation bar  design  -->
+    <nav class="s-m">
+
+        <div class="logo">
+            <h1 class="logo">Test</h1>
+        </div>
+
+        <div class="nav-links">
+            <a href="login.html" class="btn-login">Login</a>
+            <a href="registration.html" class="btn-register ">Register</a>
+        </div>
+
+    </nav>
+
+    <div class="forgot-container">
+
+        <div class="forgot-form">
+
+            <form action="" id="email-form">
+                <div class="forgot-form-input">
+                    <h1 class="forgot-text">Forgot Password</h1>
+
+                    <span id="msg"
+                        style="font-family:  Nunito, sans-serif; font-weight: 700; margin-bottom: 3rem;"></span>
+
+                    <div id="1" class="">
+                        <h4 class="forgot-para">Enter Your register Email</h4>
+                        <input type="email" class="forgot-input" id="forgot-input" required>
+                        <button class="forgot-btn">Send</button>
+                    </div>
+            </form>
+
+            <div id="2" class="hide">
+                <form action="" id="verify-otp">
+                    <h4 class="forgot-para">Enter otp</h4>
+                    <input type="text" class="forgot-input" id="forgot-otp" required>
+                    <button class="forgot-btn" id="verify">Verify</button>
+                </form>
+
+            </div>
+
+            <div id="3" class="hide">
+                <form action="" id="password">
+
+
+                    <h4 class="forgot-para">Enter New Password</h4>
+                    <div>
+                        <input type="password" class="forgot-input pass-in" id="pass" required>
+                        <input type="password" class="forgot-input pass-in" id="cpass" required>
+                        <div>
+                            <button class="forgot-btn pass-btn">Change</button>
+                        </div>
+
+                    </div>
+
+
+                </form>
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="forgot-img">
+        <img src="img/forgot.png" alt="" class="forgot-icon">
+    </div>
+    </div>
+
+
+
+
+
+    <div>
+        <h6 class="made-with"> Made with<i class="fa-solid fa-heart"></i> in pune <i class="fa-solid fa-city"></i> </h6>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/forgot.js"></script>
+
+</body>
+
+
+</html>

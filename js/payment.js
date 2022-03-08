@@ -53,7 +53,7 @@ var free = function () {
       var status = $.parseJSON(response);
 
       if (data.status === status.status) {
-      window.location.replace("http://www.w3schools.com");
+      window.location.replace("dashboard.jsp");
       } else {
         alert("something went wrong");
       }

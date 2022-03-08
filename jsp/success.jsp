@@ -51,7 +51,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                       PreparedStatement userQuery = conn.prepareStatement("UPDATE `user` SET `userType`= ?, `leftTest`=? WHERE id=?");
 
                       userQuery.setString(1,planType);
-                      userQuery.setString(2,"0");
+                      userQuery.setString(2,"100");
                       userQuery.setString(3,id);
                       int  result = userQuery.executeUpdate();
 
@@ -118,7 +118,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
     </div>
 
     <script>
-        var timeLeft = 30;
+        var timeLeft = 15;
         var elem = document.getElementById('some_div');
 
         var timerId = setInterval(countdown, 1000);

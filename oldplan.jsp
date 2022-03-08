@@ -105,7 +105,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                     <h1 class="sub_heading">Basic</h1>
                     <h3 class="plan-discription"> Get 3 Test for free</h3>
 
-                    <button class="plan-btn l-space" id="free" type="button" id="free">Start</button>
+                    <button class="plan-btn btn-disabled l-space" id="free" type="button" id="free" disabled >Start</button>
                    
                 </div>
 

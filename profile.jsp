@@ -67,7 +67,8 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Nunito:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-        
+         <!-- jquery cdn link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- font  awsome fonts link -->
     <link rel="stylesheet" href="css/all.css">
@@ -168,7 +169,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                             <div class="mr">
                                 <label for="name" class="lable">Last Name</label>
                                 <div>
-                                    <input type="text" class="input-fields" name="lastName" value="<% out.print(lastName);  %>" required>
+                                    <input type="text" class="input-fields" name="lastName" value="<%out.print(lastName);%>" required>
                                 </div>
                             </div>
                             <!-- <input type="text"> -->
@@ -178,14 +179,14 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                             <div class="mr">
                                 <label for="name" class="lable">Email</label>
                                 <div>
-                                    <input type="email" class="input-fields" name="email" value="<%  out.print(email);%>" required>
+                                    <input type="email" class="input-fields" name="email" value="<%out.print(email);%>" required>
                                 </div>
                             </div>
 
                             <div class="mr">
                                 <label for="name" class="lable">Mobile No</label>
                                 <div>
-                                    <input type="text" max-lenght="10" min-lenght="10" class="input-fields" name="mobileNo" value=" <% out.print(mobileNo); %>" required>
+                                    <input type="text" max-lenght="10" min-lenght="10" class="input-fields" name="mobileNo" value="<%out.print(mobileNo);%>" required>
                                 </div>
                             </div>
                             <!-- <input type="text"> -->
@@ -196,7 +197,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                             <div class="email-container">
                                 <label for="name" class="lable">Date Of Birth</label>
                                 <div>
-                                    <input type="text" class="input-fields long-input" name="dob" value =" <% out.print(dob);%>" required>
+                                    <input type="text" class="input-fields long-input" name="dob" value ="<%out.print(dob);%>" required>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +206,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                             <div class="email-container">
                                 <label for="name" class="lable">Address</label>
                                 <div>
-                                    <input type="text" class="input-fields long-input" name="address" value=" <% out.print(address);%> " required>
+                                    <input type="text" class="input-fields long-input" name="address" value="<%out.print(address);%>" required>
                                 </div>
                             </div>
                         </div>
@@ -214,7 +215,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                             <div class="email-container">
                                 <label for="name" class="lable">Password</label>
                                 <div>
-                                    <input type="password" class="input-fields long-input" Name="password" value=" <% out.print(password);%>" required>
+                                    <input type="password" class="input-fields long-input" Name="password" value="<%out.print(password);%>" required>
                                 </div>
                             </div>
                         </div>
@@ -235,7 +236,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
     </div>
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
         <script src="js/update.js"></script>
 
 </body>
