@@ -103,7 +103,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                 
                     <img src="img/money-bag.gif" alt="money-bag" class="money-icon">
                     <h1 class="sub_heading">Basic</h1>
-                    <h3 class="plan-discription"> Get 3 Test for free</h3>
+                    <h3 class="plan-discription"> Get 1 Test for free</h3>
 
                     <button class="plan-btn l-space" id="free" type="button" id="free">Start</button>
                    

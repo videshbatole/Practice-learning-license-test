@@ -141,12 +141,17 @@ nav h1 {
 }
 
 .logout-container {
-  width: 85vw;
+  
+  margin-right: 4rem;
+  width: 100%;
+
   background-color: #ffffff;
 }
 .row {
   display: flex;
-  padding: 1rem;
+  padding-top: 1rem ;
+  padding-bottom: 1rem;
+  padding-right: 2.5rem;
   /* float: right; */
   justify-content: end;
   background-color: #ffffff;

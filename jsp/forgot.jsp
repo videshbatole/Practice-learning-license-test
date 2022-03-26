@@ -5,7 +5,7 @@
     String email = request.getParameter("email");
 
        try {
-
+              Class.forName("com.mysql.jdbc.Driver");
               Connection  conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ltest","root","");
               PreparedStatement es = conn.prepareStatement("SELECT * FROM `user`   where email =? ");
 

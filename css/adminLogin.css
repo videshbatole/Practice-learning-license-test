@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.main-container {
+  width: auto;
+  /* background-color: red; */
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.logo {
+  font-family: "Josefin Sans", sans-serif;
+  color: #ffac09;
+}
+.logo-container {
+  margin-top: 1rem;
+}
+hr {
+  border-top: 2px solid #ffac09;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.input-fields {
+  width: 20rem;
+  padding: 0.5rem 0.5rem;
+}
+
+.login-btn {
+  padding: 0.5rem 9.4rem;
+  background-color: #ffac09;
+  border: none;
+  font-weight: 900;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 800;
+  color: gray;
+}
+.form-container {
+  margin-top: 12%;
+  width: 22rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.heading {
+  text-align: center;
+  padding: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  opacity: 80%;
+}
+.email-container {
+  padding-bottom: 1rem;
+}
+.password-container {
+
+  padding-bottom: 1rem;
+}

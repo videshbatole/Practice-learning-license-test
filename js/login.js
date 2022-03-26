@@ -13,7 +13,7 @@ $("#loginform").submit(function (e) {
       const valid = { status: "valid" };
       const invalid = { status: "invalid" };
       const user = { type: "New" };
-      console.log(json);
+
       const status = JSON.stringify(json.status);
       const type = JSON.stringify(json.type);
 

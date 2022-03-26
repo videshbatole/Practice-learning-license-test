@@ -26,6 +26,11 @@ $("#email-form").submit(function (e) {
       }
 
       function checkotp(otp) {
+        msg.innerHTML = " OTP Send Successfully";
+        msg.style.color = "green";
+        msg.style.fontSize = "16px";
+        msg.style.marginBottom = "3rem";
+
         const first = document.getElementById("1");
         const second = document.getElementById("2");
         const third = document.getElementById("3");
@@ -42,6 +47,10 @@ $("#email-form").submit(function (e) {
             second.classList.add("hide");
             third.classList.remove("hide");
             third.classList.add("show");
+            msg.innerHTML = " OTP Verified";
+            msg.style.color = "green";
+            msg.style.fontSize = "16px";
+            msg.style.marginBottom = "3rem";
 
             $("#password").submit(function (e) {
               e.preventDefault();
@@ -54,45 +63,45 @@ $("#email-form").submit(function (e) {
                   type: "post",
                   url: "jsp/forgotPassword.jsp",
                   data: userPassword,
-                    success: function (response) {
-                      
-                        var json = $.parseJSON(response);
-                        const success = { status: "success" };
-                        const check = success.status;
-                        const data = json.status;
+                  success: function (response) {
+                    var json = $.parseJSON(response);
+                    const success = { status: "success" };
+                    const check = success.status;
+                    const data = json.status;
 
-                        if (check === data) {
+                    if (check === data) {
+                      msg.innerHTML = "Password  change Successfully";
+                      msg.style.color = "green";
+                      msg.style.fontSize = "16px";
+                      msg.style.marginBottom = "3rem";
 
-                             msg.innerHTML = "Password  change Successfully";
-                             msg.style.color = "green";
-                             msg.style.fontSize = "20px";
-                             msg.style.marginBottom = "3rem";
-                            
-
-                        } else {
-
-                              msg.innerHTML = "Someting Went Wrong";
-                              msg.style.color = "red";
-                              msg.style.fontSize = "20px";
-                              msg.style.marginBottom = "3rem";
-                            
-                            
-
-                        }
-                   
+                      third.classList.add("hide");
+                      third.classList.remove("show");
+                      first.classList.remove("hide");
+                      first.classList.add("show");
+                      document.getElementById("forgot-input").value = " ";
+                      document.getElementById("forgot-otp").value = " ";
+                      document.getElementById("pass").value = " ";
+                      document.getElementById("cpass").value = "";
+                    } else {
+                      msg.innerHTML = "Someting Went Wrong";
+                      msg.style.color = "red";
+                      msg.style.fontSize = "16px";
+                      msg.style.marginBottom = "3rem";
+                    }
                   },
                 });
               } else {
                 msg.innerHTML = "Password must be  same";
                 msg.style.color = "red";
-                msg.style.fontSize = "20px";
+                msg.style.fontSize = "16px";
                 msg.style.marginBottom = "3rem";
               }
             });
           } else {
-            msg.innerHTML = "Invalid otp";
+            msg.innerHTML = "Invalid OTP";
             msg.style.color = "red";
-            msg.style.fontSize = "20px";
+            msg.style.fontSize = "16px";
             msg.style.marginBottom = "3rem";
           }
         });
@@ -108,7 +117,10 @@ $("#email-form").submit(function (e) {
           return OTP;
         }
         var otp = generateOTP();
-        var massage = "your otp is:" + otp;
+        var massage =
+          " <html><body><h1 style='color:#ffac09;'>Test \n </h1> <p style='font-size:16px;'>Your One Time Password is :  <b style='color:#012E40;'>" +
+          otp +
+          "</b> </p><p style='color:gray;'>\n Do not share it with anyone</p></body></html>your otp is: ";
 
         sendEmail(massage, email);
 
@@ -116,7 +128,7 @@ $("#email-form").submit(function (e) {
       } else {
         msg.innerHTML = "Email is  not register";
         msg.style.color = "red";
-        msg.style.fontSize = "20px";
+        msg.style.fontSize = "16px";
         msg.style.marginBottom = "3rem";
       }
     },

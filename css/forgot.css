@@ -18,6 +18,8 @@
   width: 300px;
   height: 27px;
   border: 1px solid #ffac09;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .forgot-btn {
   background-color: #ffac09;
@@ -41,17 +43,16 @@
   color: gray;
 }
 
-.hide{
-
+.hide {
   display: none;
 }
-.show{
+.show {
   display: block;
 }
-.pass-btn{
-margin-top: 1rem;
+.pass-btn {
+  margin-top: 1rem;
   width: 300px;
 }
-.pass-in{
+.pass-in {
   margin-top: 1rem;
 }

@@ -1,0 +1,76 @@
+.search-transaction {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.list-container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+table {
+  width: 100%;
+  text-align: center;
+}
+.search-container {
+  display: flex;
+  float: right;
+  margin-bottom: 1rem;
+}
+
+th {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #ffac09;
+  color: #ffffff;
+}
+
+td {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.fa-magnifying-glass {
+  font-size: 1rem;
+  margin-left: -20px;
+  margin-top: 12px;
+  color: gray;
+}
+.search-input {
+  width: 15rem;
+  padding: 0.4rem;
+}
+.fa-file-lines {
+  font-size: 1.7rem;
+  color: black;
+}
+.print {
+  margin-right: 1rem;
+}
+.text {
+  font-size:9.6px;
+  padding-top: 3px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+
+.chart-row{
+
+   width:95%;
+  background-color: #ffffff;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  /* box-shadow: 1px 1px 80px grey; */
+  display: flex;
+}
+.pie-chart{
+  width: 40%;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.center{
+  text-align: center;
+}

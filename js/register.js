@@ -44,6 +44,7 @@ $("#regForm").submit(function (e) {
           msg.style.display = "block";
           msg.style.color = "green";
           msg.innerHTML = "Successfuly Registerd";
+          $("#regForm").trigger("reset");
         }
       },
     });

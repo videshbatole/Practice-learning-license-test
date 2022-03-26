@@ -7,7 +7,7 @@
                       Class.forName("com.mysql.jdbc.Driver");
                       Connection  conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ltest","root","");
 
-                      PreparedStatement addUser = conn.prepareStatement("UPDATE `user` SET `userType`='basic',`leftTest`='3' WHERE  id = ? ");
+                      PreparedStatement addUser = conn.prepareStatement("UPDATE `user` SET `userType`='basic',`leftTest`='1' WHERE  id = ? ");
                       addUser.setString(1,id);
                       
                       int x =addUser.executeUpdate();

@@ -16,7 +16,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
 
 
        ResultSet data = null;
-       String  firstName=null ,lastName=null , testLeft=null ,totalPoint=null ,totalTest =null ,plan=null , checkLeftTest=null ;
+       String  firstName=null ,lastName=null , testLeft=null ,totalPoint=null ,totalTest =null ,plan=null , checkLeftTest=null ,checkLeftTest2 =null , checkLeftTest3 =null;
        String userType =null;
        
     //    String mobile = null ,  ;
@@ -40,12 +40,11 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                          totalPoint=data.getString(11);
                          totalTest=data.getString(12);
                          testLeft=data.getString(10);
-
-                         
-                         
+ 
                          }
                           checkLeftTest ="test.jsp?testleft="+testLeft;
-
+                           checkLeftTest2 ="newtest.jsp?testleft="+testLeft;
+                            checkLeftTest3 ="test3.jsp?testleft="+testLeft;
                         
        } catch (Exception e) {
 
@@ -220,7 +219,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                             <h5>5. आपको आपके सही उत्तरों के आधार पर अंक मिलेंगे।</h5>
 
                         </div>
-                        <a href="<% out.print(checkLeftTest);%>" class="start middel-btn">Start</a>
+                        <a href="<% out.print(checkLeftTest3);%>" class="start middel-btn" >Start</a>
                     </div>
 
                     <div class="language">
@@ -233,7 +232,7 @@ if (session.getAttribute("id") == null || session.getAttribute("id").equals(""))
                             <h5>5. तुमच्या योग्य उत्तरांच्या आधारे तुम्हाला गुण मिळतील.</h5>
 
                         </div>
-                        <a href="<% out.print(checkLeftTest);%>" class="start">Start</a>
+                        <a href="<% out.print(checkLeftTest2);%>" class="start">Start</a>
                     </div>
                 </div>
 
