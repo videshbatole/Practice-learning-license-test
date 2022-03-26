@@ -9,22 +9,6 @@
 This  project  to practice learning  license test questions
   
 
-Requirements:
-
-1:Tomcat Server 
-2:xamp/wamp
-3:razerpay Api 
-4:smtp mail api
-5:web browser/crome,firefox etc
-
-Steps:
-1: copy this folder  into  C:\xampp\tomcat\webapps
-2:import database file which is inside database folder
-3: Get  api keys from  "https://razorpay.com/" 
-4: Get SMTP mail from "https://smtpjs.com/"
-5:from js/testJs.js change api key 
-  SecureToken: "Paste Your Smtp js Api key"
-6:
 ## Steps to run project
 
 Requirements:
