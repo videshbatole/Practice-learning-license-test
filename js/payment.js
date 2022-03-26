@@ -17,7 +17,7 @@ var payment = function (plan) {
   var urlString = "jsp/success.jsp?plan="+plan;
   var amount = 100 * plan;
   var options = {
-    key: "rzp_test_T6McocDdGa0Qrm", // Enter the Key ID generated from the Dashboard
+    key: "xxx_xxxx_xxxxxxxxxxxxxx", // Enter the Key ID generated from the Dashboard
     amount: amount,
     currency: "INR",
     name: name,

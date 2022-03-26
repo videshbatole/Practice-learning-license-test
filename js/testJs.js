@@ -214,9 +214,9 @@ function sendScore(para) {
   var email = document.getElementById("email").value;
 
   Email.send({
-    SecureToken: "5020be41-9b51-42a4-b5df-f91f2ec042b7",
+    SecureToken: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx",
     To: email,
-    From: "demop2424@gmail.com",
+    From: "XXXX@gmail.com", //Add your SMTP email here
     Subject: "this  is mail from ",
     Body: massage,
   }).then(console.log("successfully send"));
